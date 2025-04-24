@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../svg/logo.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Currency Converter</title>
+	</head>
+	<body>
+		<div class="error-container">
+			<img src="../svg/error.svg" alt="Internet Error" class="error-img" />
+			<div class="error-box">
+				<h1 class="text-message">
+					Oh no! We're experiencing some network issues!
+				</h1>
+				<p class="description-text">
+					Unfortunately, our app isn't so cool without internet. Check your
+					internet connection.
+				</p>
+			</div>
+		</div>
+		<header>
+			<div class="header-container">
+				<div class="hamburger">
+					<img src="../svg/hamburger.svg" alt="Hamburger Menu" />
+				</div>
+				<img src="../svg/bank-logo.svg" alt="" class="img" />
+
+				<ul class="nav">
+					<li class="nav-links bank">BANK</li>
+					<li class="nav-links">BUSINESS</li>
+					<li class="nav-links">INVESTMENTS</li>
+					<li class="nav-links">INSURANCE</li>
+					<li class="nav-links">MOBILE</li>
+					<li class="nav-links">TRAVEL</li>
+					<li class="nav-links">ENTERTAINMENT</li>
+					<li class="nav-links login">LOG IN</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<div class="currency-converter">
+				<h1 class="title">Online Currency Converter</h1>
+				<div class="convertors">
+					<div class="conversion-form">
+						<p class="text">I have</p>
+						<div class="container-btns">
+							<button class="btns from from-focused" value="RUB">RUB</button>
+							<button class="btns from" value="USD">USD</button>
+							<button class="btns from" value="EUR">EUR</button>
+							<button class="btns from" value="GBP">GBP</button>
+						</div>
+						<div class="pair-input">
+							<form action="">
+								<input type="text" class="amount" value="5000" />
+							</form>
+							<p class="currency-label"></p>
+						</div>
+					</div>
+
+					<div class="conversion-result">
+						<p class="text">I want to get</p>
+						<div class="container-btns">
+							<button class="btns to" value="RUB">RUB</button>
+							<button class="btns to to-focused" value="USD">USD</button>
+							<button class="btns to" value="EUR">EUR</button>
+							<button class="btns to" value="GBP">GBP</button>
+						</div>
+						<div class="pair-input">
+							<input type="text" class="result" />
+							<p class="exchange-label"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
